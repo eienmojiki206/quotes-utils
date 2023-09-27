@@ -96,20 +96,12 @@ const QuoteGenerator = () => {
   const interval = useRef(null);
 
   const fetchNewQuote = async () => {
-    const response = await fetch(
-      "https://quotes15.p.rapidapi.com/quotes/random/",
-      {
-        headers: {
-          "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
-          "X-RapidAPI-Host": "quotes15.p.rapidapi.com",
-        },
-      }
-    );
+    const response = await fetch("https://api.quotable.io/random");
     const data = await response.json();
     console.log(data);
     setQuoteData({
       text: data.content,
-      author: data.originator.name,
+      author: data.author,
     });
   };
 
