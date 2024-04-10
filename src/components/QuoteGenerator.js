@@ -2,7 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import {
   BiSolidChevronRightCircle,
   BiSolidQuoteAltLeft,
+  BiSolidQuoteAltRight,
   BiStopCircle,
+  BiSolidPlusCircle
 } from "react-icons/bi";
 import { Tooltip } from "react-tooltip";
 import styled from "styled-components";
@@ -33,12 +35,13 @@ const Quote = styled.div`
 
 const Title = styled.h1`
   color: ${(props) => props.theme.titleColor};
-  font-size: 4em;
+  font-size: 3.5em;
   padding: 0;
   margin: 0;
 `;
 
 const Text = styled.p`
+margin: 0;
   color: ${(props) => props.theme.tagLineColor};
   font-style: italic;
   font-size: 1.5em;
@@ -46,6 +49,14 @@ const Text = styled.p`
   @media (max-width: 768px) {
     font-size: 1.2em;
   }
+`;
+
+const YellowText = styled.p`
+margin: 0;
+display:inline;
+float:right;
+padding-left: 10px;
+  color: ${(props) => props.theme.titleColor};
 `;
 
 const Author = styled.p`
@@ -95,6 +106,8 @@ const QuoteGenerator = () => {
   const [isAutoQuoteEnabled, setIsAutoQuoteEnabled] = useState(false);
   const interval = useRef(null);
 
+  const yellow = (props) => props.theme.titleColor;
+
   const fetchNewQuote = async () => {
     const response = await fetch("https://api.quotable.io/random");
     const data = await response.json();
@@ -119,12 +132,13 @@ const QuoteGenerator = () => {
   return (
     <QuoteContainer>
       <Quote>
-        <Title>"</Title>
-        <Text>{quoteData.text}"</Text>
+        <Title><BiSolidQuoteAltLeft /></Title>
+        <Text>{quoteData.text} <YellowText><BiSolidQuoteAltRight color={{yellow}} size="20px" /></YellowText></Text>
+        
         <Author>- {quoteData.author || "Unknown"}</Author>
         <ButtonGroup>
           <ButtonNewQuote onClick={fetchNewQuote}>
-            <BiSolidQuoteAltLeft
+            <BiSolidPlusCircle
               data-tooltip-id="newquote"
               data-tooltip-content="New Quote"
               data-tooltip-place="top"

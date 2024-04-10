@@ -1,175 +1,67 @@
 <a name="readme-top"></a>
 
-<br />
-<div align="center">
-  <a href="https://github.com/sabrinabertol/ai-random-quote-generator">
-    <img src="./public/aspa.png" alt="Logo" width="80" height="55">
-  </a>
+<img src="./public/logo.png" alt="Logo" width="40" height="40">
 
-<h3 align="center">Quote of the Day</h3>
+# Quote of the Day
+Your daily dose of inspiration. This is a random quote generator built with ReactJs and ChatGPT4 that can be used as a background. 
 
-  <p align="center">
-    Your daily dose of inspiration. This is a random quote generator built with ReactJs and ChatGPT4 that can be used as a screensaver. 
-    <br />
-    <br />
-    <a href="https://sabrinabertol.github.io/ai-random-quote-generator/">View Demo</a>
-    ·
-    <a href="https://github.com/sabrinabertol/ai-random-quote-generator/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/sabrinabertol/ai-random-quote-generator/issues">Request Feature</a>
-  </p>
-</div>
+### [Live Website](https://sabrinabertol.github.io/ai-random-quote-generator/)
+## Some Images:
+<img width="450px;" src="./public/dark.png"/>
+<img width="450px;" src="./public/light.png"/>
 
 
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-        <ul>
-        <li><a href="#features">Features</a></li>
-      </ul>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+## Table of Contents
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Introduction
+*Quote of the Day* is a random quote generator that can be used as a background, giving you little doses of daily inspiration. 
 
-## About The Project
+## Features
+- Light / Dark mode (change the appearence of the website, depending on your mood).
+- Auto Quotes (automatically fetch a new quote every 30 seconds).
 
-<div align="center">
-    <img src="./public/dark.png" alt="Logo" width="500" height="auto">
-    <img src="./public/light.png" alt="Logo" width="500" height="auto">
-</div>
-<br>
+## Technologies Used
+- React.js: A JavaScript library for building user interfaces.
+- HTML5 & CSS3: Markup and styling languages for building web pages.
+- JavaScript: A programming language for adding interactivity to web applications.
+- Style-Components: A CSS framework for creating responsive and mobile-first designs.
+- Git: A version control system for tracking changes and collaborating on projects.
+- GitHub Pages: A platform for hosting and deploying web applications.
 
-Quote of the Day is a random quote generator created with ReactJs, RapidAPI and with the help of ChatGPT4. 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-### Built With
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Getting Started
-
-To get a local copy up and running follow these simple example steps:
-
-
-### Prerequisites
-
-* npm
-
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
+## Installation
+To run this project locally, follow these steps:
 
 1. Get a free API Key at [RapidAPI](https://rapidapi.com/)
-
-
-2. Clone the repo
-   ```sh
-   git clone https://github.com/sabrinabertol/ai-random-quote-generator.git
-   ```
-
-
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-
-4. Enter your RapidAPI key in `.env`
-   ```
-   REACT_APP_API_KEY=[ENTER YOUR RAPID API KEY];
-   ```
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+2. Clone the repository: `git clone https://sabrinabertol.github.io/ai-random-quote-generator.git`
+3. Navigate to the project directory: `cd ai-random-quote-generator`
+4. Enter your RapidAPI key in the created .env file: `REACT_APP_API_KEY=YOUR RAPID API KEY`
+5. Install the dependencies: `npm install`
+6. Start the development server: `npm start`
+7. Open your browser and visit: `http://localhost:3000`
 
 ## Usage
-
-This project is a random quote generator that can be used as a screensaver, giving you little doses of daily inspiration. 
-
-### Features
-
-* Light / Dark mode (change the appearence of the website, depending on your mood)
-* Auto Quotes (automatically fetch a new quote every 1 minute)
-
-<br>
-
-See the [open issues](https://github.com/sabrinabertol/ai-random-quote-generator/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+After installing and running the project locally, you can change from light to dark mode in the navbar, fetch a new quote or start the auto quote function, that will fetch a new quote for you every 30 seconds. You can also reach me by the contact links in the footer!
 
 ## Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
-4. Push to the Branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## Contact
-
-Project Link: [https://github.com/sabrinabertol/ai-random-quote-generator](https://github.com/sabrinabertol/ai-random-quote-generator)
-
-Email: [Sabrina Bertol](bertol.sabrina@gmail.com)
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b my-feature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-feature`
+5. Open a pull request.
 
 ## Acknowledgments
 
-* [React Icons](https://react-icons.github.io/react-icons/)
-* [Best README Template](https://github.com/othneildrew/Best-README-Template/tree/master)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [React Tooltip](https://react-tooltip.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/sabrinabertol/ai-random-quote-generator.svg?style=for-the-badge
-[contributors-url]: https://github.com/sabrinabertol/ai-random-quote-generator/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/sabrinabertol/ai-random-quote-generator.svg?style=for-the-badge
-[forks-url]: https://github.com/sabrinabertol/ai-random-quote-generator/network/members
-[stars-shield]: https://img.shields.io/github/stars/sabrinabertol/ai-random-quote-generator.svg?style=for-the-badge
-[stars-url]: https://github.com/sabrinabertol/ai-random-quote-generator/stargazers
-[issues-shield]: https://img.shields.io/github/issues/sabrinabertol/ai-random-quote-generator.svg?style=for-the-badge
-[issues-url]: https://github.com/sabrinabertol/ai-random-quote-generator/issues
-[license-shield]: https://img.shields.io/github/license/sabrinabertol/ai-random-quote-generator.svg?style=for-the-badge
-[license-url]: https://github.com/sabrinabertol/ai-random-quote-generator/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/sabrinabertol
+<p align="right"><a href="#readme-top">back to top</a></p>
